@@ -1,0 +1,13 @@
+This was done by defining a poof button in the diffusion GUI, when testing it, we had this problem:
+
+If a user presses it two times, we get an error saying that the wall isn't in the display anymore (of course)
+wa didn't want to have such errors as we wanted to program to run smoothly, so we added a try except structure
+that gives a pop up if the wall has already been poofed.
+You can test that in the main.py file.
+
+PS:
+Wa had many problems like this, we got errors left and right after closing files etc, so we made sure to debug
+them, put try except structures where we needed so we can make sure we don't get a meaningless error (after the simulation is done, and closing the window, the program still wants to update it/ update the display,
+so we stopped that.)
+
+Also, to make sure the diffusion window runs smoothly, we added a stop graphing button so the user only gets the graph in the moments he wants.
